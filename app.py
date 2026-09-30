@@ -43,7 +43,7 @@ embedding_model = load_embedding_model()
 # ChromaDB
 # --------------------------------------------------
 
-client = chromadb.Client()
+client = chromadb.EphemeralClient()
 
 collection = client.get_or_create_collection(
     name="documents"
